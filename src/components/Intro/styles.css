@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.introWrapper{
+    /* border : 2px solid black; */
+    height: 120wh ;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    /* text-align: center; */
+    padding: 4rem 2rem 2rem 0rem;
+    font-family: 'Merriweather', serif;
+    /* margin-top: 3rem; */
+}
+
+.textDiv{
+    /* border : 2px solid purple; */
+    padding-top: 4rem;
+    padding-left: 2rem;
+    margin-right: 2rem;
+    /* flex-grow: 2; */
+}
+
+.textDiv > h2 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: cornflowerblue;
+}
+
+
+.photoDiv {
+    /* border : 2px solid blue; */
+    border-radius: 2%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../../images/blog.jpg);
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 20s infinite ease-in-out;
+    
+    width: 80rem;
+    height: 25rem;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(../../images/blog.jpg);
+    }
+    20%
+    {
+        background-image: url(../../images/blog2.jpg);
+    }
+    40%
+    {
+        background-image: url(../../images/blog3.jpg);
+    }
+    60%
+    {
+        background-image: url(../../images/blog2.jpg);
+    }
+    80%
+    {
+        background-image: url(../../images/blog.jpg);
+    }
+    100%
+    {
+        background-image: url(../../images/blog3.jpg);
+    }
+}
+
+@media screen and (max-width  :1200px) {
+    .introWrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    .photoDiv{
+        display: none;
+    }
+}
+

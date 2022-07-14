@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
+.homewrapper{
+    font-family: 'Merriweather', serif;
+}
+
+.bounceEffect {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .bounceEffect:hover, .bounceEffect:focus, .bounceEffect:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  }
+
+  @media screen and (max-width : 400px) {
+    .marginForsm{
+      /* border : 2px solid black; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* margin : 0; */
+      padding: 0 !important;
+      /* width: fit-content; */
+    }
+
+    .marginForsm > a {
+      /* border: 2px solid orange; */
+      width: 100%;
+      /* left: 0; */
+    }
+
+    /* .chedit{
+      margin: 0;
+    } */
+
+    .marginForsm button {
+      /* border : 2px solid purple; */
+      width: 100%;
+      height: 3rem;
+      padding : 0;
+      margin: 1rem;
+    }
+
+    .card-link{
+      margin : 0 !important;
+    }
+
+  }
